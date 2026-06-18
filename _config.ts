@@ -12,5 +12,9 @@ site.use(postcss());
 site.add("styles.css");
 site.copy("assets");
 site.copy("CNAME");
+site.copy("patents/NO338751B1.pdf");
+site.copy("patents/US10485581B2.pdf");
+site.ignore("README.md");
+site.ignore("patents/README.md");
 
 export default site;

@@ -2,9 +2,14 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
   --color-brand: #8a2f2f;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.font-display {
+  font-optical-sizing: auto;
 }
