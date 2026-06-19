@@ -14,8 +14,8 @@ html {
   font-optical-sizing: auto;
 }
 
-/* Fade the hero patent figure out toward the left so the headline stays clean */
+/* Fade the hero patent figure upward so it sits mostly below the lead text */
 .fig-mask {
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 40%);
-  mask-image: linear-gradient(to right, transparent, #000 40%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 42%);
+  mask-image: linear-gradient(to bottom, transparent, #000 42%);
 }
