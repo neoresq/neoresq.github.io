@@ -1,13 +1,19 @@
 import lume from "lume/mod.ts";
-import tailwindCSS from "lume/plugins/tailwindcss.ts";
-import postcss from "lume/plugins/postcss.ts";
+import metas from "lume/plugins/metas.ts";
+import robots from "lume/plugins/robots.ts";
+import tailwindcss from "lume/plugins/tailwindcss.ts";
+import sitemap from "lume/plugins/sitemap.ts";
+import gzip from "lume/plugins/gzip.ts";
 
 const site = lume({
   location: new URL("https://www.neoresq.com/"),
 });
 
-site.use(tailwindCSS());
-site.use(postcss());
+site.use(metas());
+site.use(robots());
+site.use(tailwindcss());
+site.use(sitemap());
+site.use(gzip());
 
 site.add("styles.css");
 site.copy("assets");
