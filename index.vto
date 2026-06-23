@@ -148,3 +148,34 @@ layout: layout.vto
   <p>&copy; {{ new Date().getFullYear() }} NeoResQ</p>
   <p>Patented medical device</p>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.neoresq.com/#organization",
+      "name": "NeoResQ",
+      "url": "https://www.neoresq.com/",
+      "logo": "https://www.neoresq.com/assets/img/logo.svg",
+      "email": "hello@neoresq.com",
+      "description": "NeoResQ develops the UMP-123, a patented device for establishing umbilical-vein access in newborn resuscitation.",
+      "founder": {
+        "@type": "Person",
+        "name": "Terje Eide",
+        "jobTitle": "Anaesthesiologist",
+        "description": "Inventor of the UMP-123 and founder of NeoResQ."
+      }
+    },
+    {
+      "@type": "MedicalDevice",
+      "name": "UMP-123",
+      "alternateName": "Umbilical-vessel port",
+      "url": "https://www.neoresq.com/#device",
+      "description": "A patented device that establishes access to the umbilical vein within the first minute after birth, enabling any clinician — not only specialists — to begin advanced newborn resuscitation.",
+      "manufacturer": { "@id": "https://www.neoresq.com/#organization" }
+    }
+  ]
+}
+</script>
