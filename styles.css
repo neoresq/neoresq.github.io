@@ -13,3 +13,20 @@ html {
 .font-display {
   font-optical-sizing: auto;
 }
+
+/* Ambient blueprint grid: fine + major engineering lines, fading down the fold */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(120, 113, 108, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 113, 108, 0.045) 1px, transparent 1px),
+    linear-gradient(to right, rgba(120, 113, 108, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(120, 113, 108, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 160px 160px, 160px 160px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 30%, transparent 88%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 30%, transparent 88%);
+}
