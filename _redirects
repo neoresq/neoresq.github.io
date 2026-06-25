@@ -1,0 +1,4 @@
+https://neoresq.com/ https://www.neoresq.com/ 301
+https://neoresq.com/* https://www.neoresq.com/:splat 301
+http://neoresq.com/ https://www.neoresq.com/ 301
+http://neoresq.com/* https://www.neoresq.com/:splat 301

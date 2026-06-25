@@ -18,6 +18,7 @@ site.use(gzip());
 site.add("styles.css");
 site.copy("assets");
 site.copy("CNAME");
+site.copy("_redirects");
 site.copy("patents/NO338751B1.pdf");
 site.copy("patents/US10485581B2.pdf");
 site.ignore("README.md");
